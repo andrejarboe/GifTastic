@@ -38,7 +38,7 @@ function start() {
 function makeGifs() {
     var apiKey = "3OIDYelHWdb40LzAq89bCSEY3DUWdDkd";
     var search = $(this).attr('data-name');
-    var url = "http://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=" + apiKey + "&limit=10";
+    var url = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=" + apiKey + "&limit=10";
     $.ajax({
         url: url,
         method: 'GET'
