@@ -1,9 +1,9 @@
 // A $( document ).ready() block.
-// $(document).ready(function () {
+$(document).ready(function () {
 
 /* Global varables 
  **********************************/
-var topics = ['space', 'stars', 'black hole'];
+var topics = ['space', 'stars', 'black hole', 'moon'];
 
 
 
@@ -106,4 +106,4 @@ start();
 
 
 
-// });
+});
