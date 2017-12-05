@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 /* Global varables 
  **********************************/
-var topics = ['space', 'stars', 'black hole', 'moon'];
+var topics = ['space', 'stars', 'black hole', 'moon', 'mars'];
 
 
 
