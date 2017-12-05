@@ -1,0 +1,24 @@
+
+.container{
+    width: 760px;
+    margin: 0 auto;
+}
+
+#gifs{
+    width: 60%;
+    display: inline;
+    float: left;
+}
+
+form{
+    width: 30%;
+    display: inline;
+    float: right;
+
+}
+
+
+img{
+    max-width: 100%;
+    display: inline;
+}
