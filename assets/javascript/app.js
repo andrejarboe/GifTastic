@@ -29,12 +29,13 @@ function displayButtons() {
 function start() {
     displayButtons();
     $(document).on('click', '.button', makeGifs);
+    $(document).on('click', '.gif', gifControls);
+    
 
 }
 
 //grab button data
 function makeGifs() {
-    console.log('buton clicked');
     var apiKey = "3OIDYelHWdb40LzAq89bCSEY3DUWdDkd";
     var search = $(this).attr('data-name');
     var url = "http://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=" + apiKey + "&limit=10";
@@ -64,6 +65,21 @@ function makeGifs() {
         }
     });
 
+}
+
+//pause/play gifs
+function gifControls() {
+    var state = $(this).attr("data-state");
+    // If the clicked image's state is still, update its src attribute to what its data-animate value is.
+    // Then, set the image's data-state to animate
+    // Else set src to the data-still value
+    if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+    }
 }
 
 
